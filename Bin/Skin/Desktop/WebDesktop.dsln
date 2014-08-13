@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DirectUI>
+	<SlnInfo Name="WebDesktop" Author="" Company="" CreateDate="" Path="E:\svn\Bin\Skin\WebDesktop\WebDesktop.dsln"/>
+	<Dui>
+		<Guid3974852B1F374A04BE628C94EA492A30 DuiName="WebDesktop" DuiPath="E:\svn\Bin\Skin\WebDesktop\WebDesktop.dui">
+			<GuidD5DCD56FB75B4F3A8050C1E90CC9E270 SknName="Default" SknPath="E:\svn\Bin\Skin\WebDesktop\Default.skn" Theme=""/>
+		</Guid3974852B1F374A04BE628C94EA492A30>
+	</Dui>
+</DirectUI>
+

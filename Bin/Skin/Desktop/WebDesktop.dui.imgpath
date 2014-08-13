@@ -1,0 +1,273 @@
+<IMAGEPATHMAP>
+	<IMAGE name="ALL1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\按钮.png"/>
+	</IMAGE>
+	<IMAGE name="Ani1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\加载.png"/>
+	</IMAGE>
+	<IMAGE name="BtnCloseHot">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\BtnCloseHot.png"/>
+	</IMAGE>
+	<IMAGE name="BtnCloseNormal">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\BtnClose.png"/>
+	</IMAGE>
+	<IMAGE name="BtnMax">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\BtnMax.png"/>
+	</IMAGE>
+	<IMAGE name="BtnMaxHot">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\BtnMaxHot.png"/>
+	</IMAGE>
+	<IMAGE name="BtnMinNormal">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\BtnMin.png"/>
+	</IMAGE>
+	<IMAGE name="MinBtnHot">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\MinBtnHot.png"/>
+	</IMAGE>
+	<IMAGE name="RegBtnLogin">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\RegBtnLogin.png"/>
+	</IMAGE>
+	<IMAGE name="RegInputText">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\RegInputText.png"/>
+	</IMAGE>
+	<IMAGE name="Rest">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Rest.png"/>
+	</IMAGE>
+	<IMAGE name="RestHot">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\RestHot.png"/>
+	</IMAGE>
+	<IMAGE name="StaDay1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\数字.png"/>
+	</IMAGE>
+	<IMAGE name="bg">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\bg_b.png"/>
+	</IMAGE>
+	<IMAGE name="bg1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\框.png"/>
+	</IMAGE>
+	<IMAGE name="bg10">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\框.png"/>
+	</IMAGE>
+	<IMAGE name="bg10_1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\框\框\框.png"/>
+	</IMAGE>
+	<IMAGE name="bg11">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\弹框2-1.png"/>
+	</IMAGE>
+	<IMAGE name="bg12">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\弹框2-2.png"/>
+	</IMAGE>
+	<IMAGE name="bg13">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\弹框3-2.png"/>
+	</IMAGE>
+	<IMAGE name="bg13_1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\框\框\弹框2-2.png"/>
+	</IMAGE>
+	<IMAGE name="bg14">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\弹框3-1.png"/>
+	</IMAGE>
+	<IMAGE name="bg14_1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\框\框\弹框2-1.png"/>
+	</IMAGE>
+	<IMAGE name="bg16">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\弹框1.png"/>
+	</IMAGE>
+	<IMAGE name="bg16_1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\框\框\弹框1.png"/>
+	</IMAGE>
+	<IMAGE name="bg17">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\孕期提醒-头部\孕期提醒首页改2014-02-25头部颜色-1.png"/>
+	</IMAGE>
+	<IMAGE name="bg19_1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\弹窗.png"/>
+	</IMAGE>
+	<IMAGE name="bg2">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\框框.png"/>
+	</IMAGE>
+	<IMAGE name="bg3">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\未标题-1.png"/>
+	</IMAGE>
+	<IMAGE name="bg4">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\框3.png"/>
+	</IMAGE>
+	<IMAGE name="bg5">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\弹框1.png"/>
+	</IMAGE>
+	<IMAGE name="bg6">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\弹框2.png"/>
+	</IMAGE>
+	<IMAGE name="bg6_1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\框\框\弹框1-2.png"/>
+	</IMAGE>
+	<IMAGE name="bg7">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\4.png"/>
+	</IMAGE>
+	<IMAGE name="bg8">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\4.png"/>
+	</IMAGE>
+	<IMAGE name="bg9">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\5.png"/>
+	</IMAGE>
+	<IMAGE name="btnCloseNormal1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\X.png"/>
+	</IMAGE>
+	<IMAGE name="btnCloseNormal2">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\杂.png"/>
+	</IMAGE>
+	<IMAGE name="btnCloseNormal3">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\X.png"/>
+	</IMAGE>
+	<IMAGE name="btnCloseNormal4">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\未标题-1.png"/>
+	</IMAGE>
+	<IMAGE name="btnCloseNormal5">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\X.png"/>
+	</IMAGE>
+	<IMAGE name="btnCloseNormal6">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\X.png"/>
+	</IMAGE>
+	<IMAGE name="btnCloseNormal7">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\孕期提醒-头部\btnCloseNormal4.png"/>
+	</IMAGE>
+	<IMAGE name="btnGo1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\未标题-2.png"/>
+	</IMAGE>
+	<IMAGE name="btnGo4">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\未标题-1.png"/>
+	</IMAGE>
+	<IMAGE name="btnXFhot1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\悬浮2.png"/>
+	</IMAGE>
+	<IMAGE name="btnXFnormal1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\悬浮1.png"/>
+	</IMAGE>
+	<IMAGE name="cbx1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\未标题-3.png"/>
+	</IMAGE>
+	<IMAGE name="days0">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\r0.png"/>
+	</IMAGE>
+	<IMAGE name="days1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\r1.png"/>
+	</IMAGE>
+	<IMAGE name="days2">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\r2.png"/>
+	</IMAGE>
+	<IMAGE name="days3">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\r3.png"/>
+	</IMAGE>
+	<IMAGE name="days4">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\r4.png"/>
+	</IMAGE>
+	<IMAGE name="days5">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\r5.png"/>
+	</IMAGE>
+	<IMAGE name="days6">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\r6.png"/>
+	</IMAGE>
+	<IMAGE name="days7">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\r7.png"/>
+	</IMAGE>
+	<IMAGE name="days8">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\r8.png"/>
+	</IMAGE>
+	<IMAGE name="days9">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\r9.png"/>
+	</IMAGE>
+	<IMAGE name="fmBg">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\Backgroup.png"/>
+	</IMAGE>
+	<IMAGE name="logo1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\163.png"/>
+	</IMAGE>
+	<IMAGE name="logo10">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\renren.png"/>
+	</IMAGE>
+	<IMAGE name="logo11">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\sina.png"/>
+	</IMAGE>
+	<IMAGE name="logo12">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\sinaweibo.png"/>
+	</IMAGE>
+	<IMAGE name="logo13">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\sohu.png"/>
+	</IMAGE>
+	<IMAGE name="logo14">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\soso.png"/>
+	</IMAGE>
+	<IMAGE name="logo15">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\taobao.png"/>
+	</IMAGE>
+	<IMAGE name="logo16">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\tudou.png"/>
+	</IMAGE>
+	<IMAGE name="logo17">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\weibo.png"/>
+	</IMAGE>
+	<IMAGE name="logo18">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\youku.png"/>
+	</IMAGE>
+	<IMAGE name="logo2">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\360buy.png"/>
+	</IMAGE>
+	<IMAGE name="logo3">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\baidu.png"/>
+	</IMAGE>
+	<IMAGE name="logo4">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\douban.png"/>
+	</IMAGE>
+	<IMAGE name="logo5">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\ifeng.png"/>
+	</IMAGE>
+	<IMAGE name="logo6">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\kaixin001.png"/>
+	</IMAGE>
+	<IMAGE name="logo7">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\mop.png"/>
+	</IMAGE>
+	<IMAGE name="logo8">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\pengyou.png"/>
+	</IMAGE>
+	<IMAGE name="logo9">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\Q+\qq.png"/>
+	</IMAGE>
+	<IMAGE name="time0">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\b0.png"/>
+	</IMAGE>
+	<IMAGE name="time1">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\b1.png"/>
+	</IMAGE>
+	<IMAGE name="time2">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\b2.png"/>
+	</IMAGE>
+	<IMAGE name="time3">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\b3.png"/>
+	</IMAGE>
+	<IMAGE name="time4">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\b4.png"/>
+	</IMAGE>
+	<IMAGE name="time5">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\b5.png"/>
+	</IMAGE>
+	<IMAGE name="time6">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\b6.png"/>
+	</IMAGE>
+	<IMAGE name="time7">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\b7.png"/>
+	</IMAGE>
+	<IMAGE name="time8">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\b8.png"/>
+	</IMAGE>
+	<IMAGE name="time9">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\时钟\shuzi\b9.png"/>
+	</IMAGE>
+	<IMAGE name="ver.back">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\ver.back.png"/>
+	</IMAGE>
+	<IMAGE name="ver.new">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\ver.png"/>
+	</IMAGE>
+	<IMAGE name="ver.tick">
+		<IMAGEPATH colorcase="default" path="C:\Users\Administrator\Desktop\ver.tick.png"/>
+	</IMAGE>
+</IMAGEPATHMAP>
+

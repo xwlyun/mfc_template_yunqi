@@ -1,0 +1,416 @@
+#pragma once
+inline void IDUIDialCtrl::GetRange(short * pnMin, short * pnMax  )
+{
+
+	raw_GetRange(pnMin, pnMax  );
+}
+
+inline BOOL  IDUIDialCtrl::SetRange(short  nMin, short  nMax, BOOL  bRedraw  )
+{
+	VARIANT_BOOL xxx_bRedraw = bRedraw ? VARIANT_TRUE : VARIANT_FALSE;
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_SetRange(nMin, nMax, xxx_bRedraw, &_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline void IDUIDialCtrl::SetPos(float  nPos  )
+{
+
+	raw_SetPos(nPos  );
+}
+
+inline float  IDUIDialCtrl::GetPos()
+{
+	float  _result;
+	raw_GetPos(&_result);
+	return _result;
+}
+
+inline void IDUIDialCtrl::SetCriticalVal(short  nValue  )
+{
+
+	raw_SetCriticalVal(nValue  );
+}
+
+inline short  IDUIDialCtrl::GetCriticalVal()
+{
+	short  _result;
+	raw_GetCriticalVal(&_result);
+	return _result;
+}
+
+inline void IDUIDialCtrl::SetBigFrequency(long  nFre  )
+{
+
+	raw_SetBigFrequency(nFre  );
+}
+
+inline long  IDUIDialCtrl::GetBigFrequency()
+{
+	long  _result;
+	raw_GetBigFrequency(&_result);
+	return _result;
+}
+
+inline void IDUIDialCtrl::SetSmallFrequency(long  nFre  )
+{
+
+	raw_SetSmallFrequency(nFre  );
+}
+
+inline long  IDUIDialCtrl::GetSmallFrequency()
+{
+	long  _result;
+	raw_GetSmallFrequency(&_result);
+	return _result;
+}
+
+inline void IDUIDialCtrl::SetPointPath(tstring  strPath  )
+{
+	_bstr_t xxx_strPath(strPath.c_str());
+
+	raw_SetPointPath(xxx_strPath  );
+}
+
+inline tstring  IDUIDialCtrl::GetPointPath()
+{
+	BSTR _result = NULL;
+	raw_GetPointPath(&_result);
+	tstring _strResult;
+#ifdef UNICODE
+	_strResult = (LPWSTR)_result;
+#else
+	USES_CONVERSION;
+	_strResult = W2A(_result);
+#endif
+	return _strResult;
+}
+
+inline BOOL  IDUIDialCtrl::AddKeyString(short  nValue, tstring  strKeyString  )
+{
+_bstr_t xxx_strKeyString(strKeyString.c_str());
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_AddKeyString(nValue, xxx_strKeyString, &_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline void IDUIDialCtrl::RemoveKeyString(short  nValue  )
+{
+
+	raw_RemoveKeyString(nValue  );
+}
+
+inline void IDUIDialCtrl::DrawKeyString(BOOL  bDraw  )
+{
+	VARIANT_BOOL xxx_bDraw = bDraw ? VARIANT_TRUE : VARIANT_FALSE;
+
+	raw_DrawKeyString(xxx_bDraw  );
+}
+
+inline BOOL  IDUIDialCtrl::IsDrawKeyString()
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_IsDrawKeyString(&_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline void IDUIIndicatorCtrl::SetState(enum DUIINDICATORCTRL_STATE  eState  )
+{
+
+	raw_SetState(eState  );
+}
+
+inline enum DUIINDICATORCTRL_STATE  IDUIIndicatorCtrl::GetState()
+{
+	enum DUIINDICATORCTRL_STATE  _result;
+	raw_GetState(&_result);
+	return _result;
+}
+
+inline void IDUIIndicatorCtrl::SetBlink(BOOL  bBlink  )
+{
+	VARIANT_BOOL xxx_bBlink = bBlink ? VARIANT_TRUE : VARIANT_FALSE;
+
+	raw_SetBlink(xxx_bBlink  );
+}
+
+inline BOOL  IDUIIndicatorCtrl::IsBlink()
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_IsBlink(&_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline void IDUIIndicatorCtrl::SetBlinkState(enum DUIINDICATORCTRL_STATE  eState1, enum DUIINDICATORCTRL_STATE  eState2  )
+{
+
+	raw_SetBlinkState(eState1, eState2  );
+}
+
+inline void IDUIIndicatorCtrl::SetBlinkSpace(long  lSpace  )
+{
+
+	raw_SetBlinkSpace(lSpace  );
+}
+
+inline long  IDUIIndicatorCtrl::GetBlinkSpace()
+{
+	long  _result;
+	raw_GetBlinkSpace(&_result);
+	return _result;
+}
+
+inline void IDUIIndicatorCtrl::ShowText(BOOL  bShow  )
+{
+	VARIANT_BOOL xxx_bShow = bShow ? VARIANT_TRUE : VARIANT_FALSE;
+
+	raw_ShowText(xxx_bShow  );
+}
+
+inline BOOL  IDUIIndicatorCtrl::IsShowText()
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_IsShowText(&_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline void IDUIIndicatorCtrl::SetText(tstring  strText  )
+{
+	_bstr_t xxx_strText(strText.c_str());
+
+	raw_SetText(xxx_strText  );
+}
+
+inline tstring  IDUIIndicatorCtrl::GetText()
+{
+	BSTR _result = NULL;
+	raw_GetText(&_result);
+	tstring _strResult;
+#ifdef UNICODE
+	_strResult = (LPWSTR)_result;
+#else
+	USES_CONVERSION;
+	_strResult = W2A(_result);
+#endif
+	return _strResult;
+}
+
+inline void IDUIIndicatorCtrl::SetBackImage(tstring  strPath, enum DUIINDICATORCTRL_STATE  eState1  )
+{
+	_bstr_t xxx_strPath(strPath.c_str());
+
+	raw_SetBackImage(xxx_strPath, eState1  );
+}
+
+inline OLE_COLOR  IDUIIndicatorCtrl::GetTextColor()
+{
+	OLE_COLOR  _result;
+	raw_GetTextColor(&_result);
+	return _result;
+}
+
+inline void IDUIIndicatorCtrl::SetTextColor(OLE_COLOR  color  )
+{
+
+	raw_SetTextColor(color  );
+}
+
+inline BOOL  IDUIKnobCtrl::GetCycle()
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_GetCycle(&_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline void IDUIKnobCtrl::SetCycle(BOOL  bCycle  )
+{
+	VARIANT_BOOL xxx_bCycle = bCycle ? VARIANT_TRUE : VARIANT_FALSE;
+
+	raw_SetCycle(xxx_bCycle  );
+}
+
+inline long  IDUIKnobCtrl::GetValue()
+{
+	long  _result;
+	raw_GetValue(&_result);
+	return _result;
+}
+
+inline void IDUIKnobCtrl::SetValue(long  lValue  )
+{
+
+	raw_SetValue(lValue  );
+}
+
+inline long  IDUIKnobCtrl::GetMinValue()
+{
+	long  _result;
+	raw_GetMinValue(&_result);
+	return _result;
+}
+
+inline void IDUIKnobCtrl::SetMinValue(long  lMinValue  )
+{
+
+	raw_SetMinValue(lMinValue  );
+}
+
+inline long  IDUIKnobCtrl::GetMaxValue()
+{
+	long  _result;
+	raw_GetMaxValue(&_result);
+	return _result;
+}
+
+inline void IDUIKnobCtrl::SetMaxValue(long  lMaxValue  )
+{
+
+	raw_SetMaxValue(lMaxValue  );
+}
+
+inline void IDUIKnobCtrl::SetForePath(tstring  strPath  )
+{
+	_bstr_t xxx_strPath(strPath.c_str());
+
+	raw_SetForePath(xxx_strPath  );
+}
+
+inline tstring  IDUIKnobCtrl::GetForePath()
+{
+	BSTR _result = NULL;
+	raw_GetForePath(&_result);
+	tstring _strResult;
+#ifdef UNICODE
+	_strResult = (LPWSTR)_result;
+#else
+	USES_CONVERSION;
+	_strResult = W2A(_result);
+#endif
+	return _strResult;
+}
+
+inline void IDUILedCtrl::GetValue(BSTR * pResult  )
+{
+
+	raw_GetValue(pResult  );
+}
+
+inline void IDUILedCtrl::SetValue(tstring  strValue  )
+{
+	_bstr_t xxx_strValue(strValue.c_str());
+
+	raw_SetValue(xxx_strValue  );
+}
+
+inline void IDUIThermometer::GetRange(short * pnMin, short * pnMax  )
+{
+
+	raw_GetRange(pnMin, pnMax  );
+}
+
+inline BOOL  IDUIThermometer::SetRange(short  nMin, short  nMax, BOOL  bRedraw  )
+{
+	VARIANT_BOOL xxx_bRedraw = bRedraw ? VARIANT_TRUE : VARIANT_FALSE;
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_SetRange(nMin, nMax, xxx_bRedraw, &_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline void IDUIThermometer::SetPos(short  nPos  )
+{
+
+	raw_SetPos(nPos  );
+}
+
+inline short  IDUIThermometer::GetPos()
+{
+	short  _result;
+	raw_GetPos(&_result);
+	return _result;
+}
+
+inline void IDUIThermometer::SetBigFrequency(long  nFre  )
+{
+
+	raw_SetBigFrequency(nFre  );
+}
+
+inline long  IDUIThermometer::GetBigFrequency()
+{
+	long  _result;
+	raw_GetBigFrequency(&_result);
+	return _result;
+}
+
+inline void IDUIThermometer::SetSmallFrequency(long  nFre  )
+{
+
+	raw_SetSmallFrequency(nFre  );
+}
+
+inline long  IDUIThermometer::GetSmallFrequency()
+{
+	long  _result;
+	raw_GetSmallFrequency(&_result);
+	return _result;
+}
+
+inline void IDUIThermometer::SetUnitString(tstring  strUnit  )
+{
+	_bstr_t xxx_strUnit(strUnit.c_str());
+
+	raw_SetUnitString(xxx_strUnit  );
+}
+
+inline tstring  IDUIThermometer::GetUnitString()
+{
+	BSTR _result = NULL;
+	raw_GetUnitString(&_result);
+	tstring _strResult;
+#ifdef UNICODE
+	_strResult = (LPWSTR)_result;
+#else
+	USES_CONVERSION;
+	_strResult = W2A(_result);
+#endif
+	return _strResult;
+}
+
+inline void IDUIThermometer::SetTickColor(struct IFillColor * pColor  )
+{
+
+	raw_SetTickColor(pColor  );
+}
+
+inline void IDUIThermometer::SetBackColor(struct IFillColor * pColor  )
+{
+
+	raw_SetBackColor(pColor  );
+}
+
+inline struct IFillColor * IDUIThermometer::GetTickColor()
+{
+	struct IFillColor * _result;
+	raw_GetTickColor(&_result);
+	return _result;
+}
+
+inline struct IFillColor * IDUIThermometer::GetBackColor()
+{
+	struct IFillColor * _result;
+	raw_GetBackColor(&_result);
+	return _result;
+}
+
+inline void IDUIGraphicLine::PushValue(float  fValue  )
+{
+
+	raw_PushValue(fValue  );
+}
+
+inline void IDUIGraphicLine::Clear()
+{
+
+	raw_Clear();
+}
+

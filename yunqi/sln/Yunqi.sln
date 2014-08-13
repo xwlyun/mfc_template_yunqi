@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataBase", "..\DataBase\DataBase.vcproj", "{9C36C484-9F7C-4FE8-8C8F-9CF81B13DC7F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Yunqi", "..\Yunqi\Yunqi.vcproj", "{E0F5A519-4199-43F8-ADF8-1B2650476E05}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WebHttp", "..\WebHttp\WebHttp.vcproj", "{8C434512-3E9A-472F-A086-E92409CC29ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C36C484-9F7C-4FE8-8C8F-9CF81B13DC7F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9C36C484-9F7C-4FE8-8C8F-9CF81B13DC7F}.Debug|Win32.Build.0 = Debug|Win32
+		{9C36C484-9F7C-4FE8-8C8F-9CF81B13DC7F}.Release|Win32.ActiveCfg = Release|Win32
+		{9C36C484-9F7C-4FE8-8C8F-9CF81B13DC7F}.Release|Win32.Build.0 = Release|Win32
+		{E0F5A519-4199-43F8-ADF8-1B2650476E05}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E0F5A519-4199-43F8-ADF8-1B2650476E05}.Debug|Win32.Build.0 = Debug|Win32
+		{E0F5A519-4199-43F8-ADF8-1B2650476E05}.Release|Win32.ActiveCfg = Release|Win32
+		{E0F5A519-4199-43F8-ADF8-1B2650476E05}.Release|Win32.Build.0 = Release|Win32
+		{8C434512-3E9A-472F-A086-E92409CC29ED}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8C434512-3E9A-472F-A086-E92409CC29ED}.Debug|Win32.Build.0 = Debug|Win32
+		{8C434512-3E9A-472F-A086-E92409CC29ED}.Release|Win32.ActiveCfg = Release|Win32
+		{8C434512-3E9A-472F-A086-E92409CC29ED}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,951 @@
+#pragma once
+inline struct IDUIItemGroup * IDUIScrollFairy::AddGroup(long  nID, tstring  strName  )
+{
+_bstr_t xxx_strName(strName.c_str());
+	struct IDUIItemGroup * _result;
+	raw_AddGroup(nID, xxx_strName, &_result);
+	return _result;
+}
+
+inline BOOL  IDUIScrollFairy::RemoveGroupByID(long  nID  )
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_RemoveGroupByID(nID, &_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline BOOL  IDUIScrollFairy::RemoveGroupByName(tstring  strName  )
+{
+_bstr_t xxx_strName(strName.c_str());
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_RemoveGroupByName(xxx_strName, &_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline void IDUIScrollFairy::RemoveAllGroup()
+{
+
+	raw_RemoveAllGroup();
+}
+
+inline struct IDUIItemGroup * IDUIScrollFairy::GetGroupByName(tstring  strName  )
+{
+_bstr_t xxx_strName(strName.c_str());
+	struct IDUIItemGroup * _result;
+	raw_GetGroupByName(xxx_strName, &_result);
+	return _result;
+}
+
+inline struct IDUIItemGroup * IDUIScrollFairy::GetGroupByID(long  nID  )
+{
+	struct IDUIItemGroup * _result;
+	raw_GetGroupByID(nID, &_result);
+	return _result;
+}
+
+inline long  IDUIScrollFairy::GetCount()
+{
+	long  _result;
+	raw_GetCount(&_result);
+	return _result;
+}
+
+inline void IDUIScrollFairy::SetFocusGroupByID(long  nID, BOOL  bRedraw  )
+{
+	VARIANT_BOOL xxx_bRedraw = bRedraw ? VARIANT_TRUE : VARIANT_FALSE;
+
+	raw_SetFocusGroupByID(nID, xxx_bRedraw  );
+}
+
+inline void IDUIScrollFairy::SetFocusGroupByName(tstring  strName, BOOL  bRedraw  )
+{
+	_bstr_t xxx_strName(strName.c_str());
+	VARIANT_BOOL xxx_bRedraw = bRedraw ? VARIANT_TRUE : VARIANT_FALSE;
+
+	raw_SetFocusGroupByName(xxx_strName, xxx_bRedraw  );
+}
+
+inline struct IDUIItemGroup * IDUIScrollFairy::GetFocusGroup()
+{
+	struct IDUIItemGroup * _result;
+	raw_GetFocusGroup(&_result);
+	return _result;
+}
+
+inline void IDUIScrollFairy::SetScrollReCalcRgn(BOOL  bSetRgn  )
+{
+	VARIANT_BOOL xxx_bSetRgn = bSetRgn ? VARIANT_TRUE : VARIANT_FALSE;
+
+	raw_SetScrollReCalcRgn(xxx_bSetRgn  );
+}
+
+inline void IDUIScrollFairy::ScrollOver(BOOL  bEnd  )
+{
+	VARIANT_BOOL xxx_bEnd = bEnd ? VARIANT_TRUE : VARIANT_FALSE;
+
+	raw_ScrollOver(xxx_bEnd  );
+}
+
+inline struct IDUIScrollItem * IDUIItemGroup::InsertItem(short  nIndex, long  nID, tstring  strName  )
+{
+_bstr_t xxx_strName(strName.c_str());
+	struct IDUIScrollItem * _result;
+	raw_InsertItem(nIndex, nID, xxx_strName, &_result);
+	return _result;
+}
+
+inline struct IDUIScrollItem * IDUIItemGroup::AppendItem(long  nID, tstring  strName  )
+{
+_bstr_t xxx_strName(strName.c_str());
+	struct IDUIScrollItem * _result;
+	raw_AppendItem(nID, xxx_strName, &_result);
+	return _result;
+}
+
+inline struct IDUIScrollItem * IDUIItemGroup::InsertItemWithImage(short  nIndex, long  nID, tstring  strName, tstring  strImagePath, short  nFrames, BOOL  bHorz  )
+{
+_bstr_t xxx_strName(strName.c_str());
+_bstr_t xxx_strImagePath(strImagePath.c_str());
+	VARIANT_BOOL xxx_bHorz = bHorz ? VARIANT_TRUE : VARIANT_FALSE;
+	struct IDUIScrollItem * _result;
+	raw_InsertItemWithImage(nIndex, nID, xxx_strName, xxx_strImagePath, nFrames, xxx_bHorz, &_result);
+	return _result;
+}
+
+inline struct IDUIScrollItem * IDUIItemGroup::AppendItemWithImage(long  nID, tstring  strName, tstring  strImagePath, short  nFrames, BOOL  bHorz  )
+{
+_bstr_t xxx_strName(strName.c_str());
+_bstr_t xxx_strImagePath(strImagePath.c_str());
+	VARIANT_BOOL xxx_bHorz = bHorz ? VARIANT_TRUE : VARIANT_FALSE;
+	struct IDUIScrollItem * _result;
+	raw_AppendItemWithImage(nID, xxx_strName, xxx_strImagePath, nFrames, xxx_bHorz, &_result);
+	return _result;
+}
+
+inline BOOL  IDUIItemGroup::RemoveItemByID(long  nID  )
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_RemoveItemByID(nID, &_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline BOOL  IDUIItemGroup::RemoveItemByName(tstring  strName  )
+{
+_bstr_t xxx_strName(strName.c_str());
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_RemoveItemByName(xxx_strName, &_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline BOOL  IDUIItemGroup::RemoveItem(struct IDUIScrollItem * pItem  )
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_RemoveItem(pItem, &_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline void IDUIItemGroup::RemoveAllItems()
+{
+
+	raw_RemoveAllItems();
+}
+
+inline struct IDUIScrollItem * IDUIItemGroup::GetItemByID(long  nID  )
+{
+	struct IDUIScrollItem * _result;
+	raw_GetItemByID(nID, &_result);
+	return _result;
+}
+
+inline struct IDUIScrollItem * IDUIItemGroup::GetItemByName(tstring  strName  )
+{
+_bstr_t xxx_strName(strName.c_str());
+	struct IDUIScrollItem * _result;
+	raw_GetItemByName(xxx_strName, &_result);
+	return _result;
+}
+
+inline struct IDUIScrollItem * IDUIItemGroup::GetAt(short  nIndex  )
+{
+	struct IDUIScrollItem * _result;
+	raw_GetAt(nIndex, &_result);
+	return _result;
+}
+
+inline long  IDUIItemGroup::GetCount()
+{
+	long  _result;
+	raw_GetCount(&_result);
+	return _result;
+}
+
+inline void IDUIItemGroup::SetText(tstring  strName  )
+{
+	_bstr_t xxx_strName(strName.c_str());
+
+	raw_SetText(xxx_strName  );
+}
+
+inline tstring  IDUIItemGroup::GetText()
+{
+	BSTR _result = NULL;
+	raw_GetText(&_result);
+	tstring _strResult;
+#ifdef UNICODE
+	_strResult = (LPWSTR)_result;
+#else
+	USES_CONVERSION;
+	_strResult = W2A(_result);
+#endif
+	return _strResult;
+}
+
+inline void IDUIItemGroup::SetID(long  nID  )
+{
+
+	raw_SetID(nID  );
+}
+
+inline long  IDUIItemGroup::GetID()
+{
+	long  _result;
+	raw_GetID(&_result);
+	return _result;
+}
+
+inline struct IDUISpaceItem * IDUIItemGroup::GetSpaceItem(short  nIndex  )
+{
+	struct IDUISpaceItem * _result;
+	raw_GetSpaceItem(nIndex, &_result);
+	return _result;
+}
+
+inline void IDUIItemGroup::SetSelectedItem(struct IDUIScrollItem * ppResult  )
+{
+
+	raw_SetSelectedItem(ppResult  );
+}
+
+inline void IDUIItemGroup::SetScrollPos(long  nPos  )
+{
+
+	raw_SetScrollPos(nPos  );
+}
+
+inline long  IDUIItemGroup::GetScrollPos()
+{
+	long  _result;
+	raw_GetScrollPos(&_result);
+	return _result;
+}
+
+inline long  IDUIItemGroup::GetTotalLength()
+{
+	long  _result;
+	raw_GetTotalLength(&_result);
+	return _result;
+}
+
+inline void IDUIScrollItem::SetText(tstring  strName, BOOL  bRefresh  )
+{
+	_bstr_t xxx_strName(strName.c_str());
+	VARIANT_BOOL xxx_bRefresh = bRefresh ? VARIANT_TRUE : VARIANT_FALSE;
+
+	raw_SetText(xxx_strName, xxx_bRefresh  );
+}
+
+inline tstring  IDUIScrollItem::GetText()
+{
+	BSTR _result = NULL;
+	raw_GetText(&_result);
+	tstring _strResult;
+#ifdef UNICODE
+	_strResult = (LPWSTR)_result;
+#else
+	USES_CONVERSION;
+	_strResult = W2A(_result);
+#endif
+	return _strResult;
+}
+
+inline void IDUIScrollItem::SetID(long  nID  )
+{
+
+	raw_SetID(nID  );
+}
+
+inline long  IDUIScrollItem::GetID()
+{
+	long  _result;
+	raw_GetID(&_result);
+	return _result;
+}
+
+inline void IDUIScrollItem::SetState(enum DUISCROLLITEM_STATE  eState, BOOL  bRefresh  )
+{
+	VARIANT_BOOL xxx_bRefresh = bRefresh ? VARIANT_TRUE : VARIANT_FALSE;
+
+	raw_SetState(eState, xxx_bRefresh  );
+}
+
+inline enum DUISCROLLITEM_STATE  IDUIScrollItem::GetState()
+{
+	enum DUISCROLLITEM_STATE  _result;
+	raw_GetState(&_result);
+	return _result;
+}
+
+inline void IDUIScrollItem::SetImage(tstring  strImagePath, short  nFrames, BOOL  bHorz  )
+{
+	_bstr_t xxx_strImagePath(strImagePath.c_str());
+	VARIANT_BOOL xxx_bHorz = bHorz ? VARIANT_TRUE : VARIANT_FALSE;
+
+	raw_SetImage(xxx_strImagePath, nFrames, xxx_bHorz  );
+}
+
+inline tstring  IDUIScrollItem::GetImagePath()
+{
+	BSTR _result = NULL;
+	raw_GetImagePath(&_result);
+	tstring _strResult;
+#ifdef UNICODE
+	_strResult = (LPWSTR)_result;
+#else
+	USES_CONVERSION;
+	_strResult = W2A(_result);
+#endif
+	return _strResult;
+}
+
+inline void IDUIScrollItem::SetBitmap(OLE_HANDLE  hBmp, enum DUISCROLLITEM_STATE  eState  )
+{
+
+	raw_SetBitmap(hBmp, eState  );
+}
+
+inline OLE_HANDLE  IDUIScrollItem::GetBitmap(enum DUISCROLLITEM_STATE  eState  )
+{
+	OLE_HANDLE  _result;
+	raw_GetBitmap(eState, &_result);
+	return _result;
+}
+
+inline struct IDUIControlBase * IDUIScrollItem::GetInfoPanel()
+{
+	struct IDUIControlBase * _result;
+	raw_GetInfoPanel(&_result);
+	return _result;
+}
+
+inline struct IDUIControlBase * IDUIScrollItem::GetResObject(tstring  strName  )
+{
+_bstr_t xxx_strName(strName.c_str());
+	struct IDUIControlBase * _result;
+	raw_GetResObject(xxx_strName, &_result);
+	return _result;
+}
+
+inline struct SkinRect  IDUIScrollItem::GetRect()
+{
+	struct SkinRect  _result;
+	raw_GetRect(&_result);
+	return _result;
+}
+
+inline long  IDUIScrollItem::GetIndex()
+{
+	long  _result;
+	raw_GetIndex(&_result);
+	return _result;
+}
+
+inline long  IDUISpaceItem::GetIndex()
+{
+	long  _result;
+	raw_GetIndex(&_result);
+	return _result;
+}
+
+inline void IDUISpaceItem::SetImage(OLE_HANDLE  hBitmap  )
+{
+
+	raw_SetImage(hBitmap  );
+}
+
+inline struct SkinRect  IDUISpaceItem::GetRect()
+{
+	struct SkinRect  _result;
+	raw_GetRect(&_result);
+	return _result;
+}
+
+inline OLE_HANDLE  IDUITaskBar::Create(OLE_HANDLE  hWndParent  )
+{
+	OLE_HANDLE  _result;
+	raw_Create(hWndParent, &_result);
+	return _result;
+}
+
+inline BOOL  IDUITaskBar::Destroy()
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_Destroy(&_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline BOOL  IDUITaskBar::Show(BOOL  bShow  )
+{
+	VARIANT_BOOL xxx_bShow = bShow ? VARIANT_TRUE : VARIANT_FALSE;
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_Show(xxx_bShow, &_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline long  IDUITaskBar::AppendItem(tstring  bstrPicPath  )
+{
+_bstr_t xxx_bstrPicPath(bstrPicPath.c_str());
+	long  _result;
+	raw_AppendItem(xxx_bstrPicPath, &_result);
+	return _result;
+}
+
+inline short  IDUITaskBar::GetCount()
+{
+	short  _result;
+	raw_GetCount(&_result);
+	return _result;
+}
+
+inline BOOL  IDUITaskBar::IsExistedItem(long  nID  )
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_IsExistedItem(nID, &_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline BOOL  IDUITaskBar::RemoveItem(long  nID  )
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_RemoveItem(nID, &_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline void IDUITaskBar::RemoveAll()
+{
+
+	raw_RemoveAll();
+}
+
+inline OLE_HANDLE  IDUITaskBar::GetSafeHandle()
+{
+	OLE_HANDLE  _result;
+	raw_GetSafeHandle(&_result);
+	return _result;
+}
+
+inline void IDUILyricCtrl::SetText(tstring  strText  )
+{
+	_bstr_t xxx_strText(strText.c_str());
+
+	raw_SetText(xxx_strText  );
+}
+
+inline tstring  IDUILyricCtrl::GetText()
+{
+	BSTR _result = NULL;
+	raw_GetText(&_result);
+	tstring _strResult;
+#ifdef UNICODE
+	_strResult = (LPWSTR)_result;
+#else
+	USES_CONVERSION;
+	_strResult = W2A(_result);
+#endif
+	return _strResult;
+}
+
+inline BOOL  IDUILyricCtrl::SetOkText(unsigned short  nIndex, unsigned short  nPercent  )
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_SetOkText(nIndex, nPercent, &_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline BOOL  IDUILyricCtrl::GetOkText(unsigned short * pnIndex, unsigned short * pnPercent  )
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_GetOkText(pnIndex, pnPercent, &_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline void IDUILyricCtrl::SetOkTextIndex(unsigned short  nIndex  )
+{
+
+	raw_SetOkTextIndex(nIndex  );
+}
+
+inline unsigned short  IDUILyricCtrl::GetOkTextIndex()
+{
+	unsigned short  _result;
+	raw_GetOkTextIndex(&_result);
+	return _result;
+}
+
+inline void IDUILyricCtrl::SetOkTextPercent(unsigned short  nPercent  )
+{
+
+	raw_SetOkTextPercent(nPercent  );
+}
+
+inline unsigned short  IDUILyricCtrl::GetOkTextPercent()
+{
+	unsigned short  _result;
+	raw_GetOkTextPercent(&_result);
+	return _result;
+}
+
+inline BOOL  IDUILyricCtrl::SetTextColor(OLE_COLOR  colorText  )
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_SetTextColor(colorText, &_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline OLE_COLOR  IDUILyricCtrl::GetTextColor()
+{
+	OLE_COLOR  _result;
+	raw_GetTextColor(&_result);
+	return _result;
+}
+
+inline BOOL  IDUILyricCtrl::SetOkTextColor(OLE_COLOR  colorOkText  )
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_SetOkTextColor(colorOkText, &_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline OLE_COLOR  IDUILyricCtrl::GetOkTextColor()
+{
+	OLE_COLOR  _result;
+	raw_GetOkTextColor(&_result);
+	return _result;
+}
+
+inline void IDUILyricCtrl::SetTextStyle(struct IDUITextStyle * styleText  )
+{
+
+	raw_SetTextStyle(styleText  );
+}
+
+inline struct IDUITextStyle * IDUILyricCtrl::GetTextStyle()
+{
+	struct IDUITextStyle * _result;
+	raw_GetTextStyle(&_result);
+	return _result;
+}
+
+inline void IDUILyricCtrl::SetOkTextStyle(struct IDUITextStyle * styleOkText  )
+{
+
+	raw_SetOkTextStyle(styleOkText  );
+}
+
+inline struct IDUITextStyle * IDUILyricCtrl::GetOkTextStyle()
+{
+	struct IDUITextStyle * _result;
+	raw_GetOkTextStyle(&_result);
+	return _result;
+}
+
+inline struct IDUIPropItem * IDUIPropGrid::AddPropItem(struct IDUIPropItem * pParentProp, enum DUIPROPGRID_PROPTYPE_ENUM  ePropType, long  nID, tstring  strName, VARIANT * value, tstring  strHelpTitle, tstring  strHelpContent  )
+{
+_bstr_t xxx_strName(strName.c_str());
+_bstr_t xxx_strHelpTitle(strHelpTitle.c_str());
+_bstr_t xxx_strHelpContent(strHelpContent.c_str());
+	struct IDUIPropItem * _result;
+	raw_AddPropItem(pParentProp, ePropType, nID, xxx_strName, value, xxx_strHelpTitle, xxx_strHelpContent, &_result);
+	return _result;
+}
+
+inline void IDUITimeAxis::SetStartTime(struct DataTime  tmData  )
+{
+
+	raw_SetStartTime(tmData  );
+}
+
+inline void IDUITimeAxis::SetEndTime(struct DataTime  tmData  )
+{
+
+	raw_SetEndTime(tmData  );
+}
+
+inline void IDUITimeAxis::SetTimeTick(long  nTimeTick  )
+{
+
+	raw_SetTimeTick(nTimeTick  );
+}
+
+inline struct IDUITimeChannel * IDUITimeAxis::AppendTimeChannel(tstring  strText  )
+{
+_bstr_t xxx_strText(strText.c_str());
+	struct IDUITimeChannel * _result;
+	raw_AppendTimeChannel(xxx_strText, &_result);
+	return _result;
+}
+
+inline void IDUITimeAxis::SetPlayMode(enum PlayMode  nMode  )
+{
+
+	raw_SetPlayMode(nMode  );
+}
+
+inline struct IDUITimerRuler * IDUITimeAxis::GetTimeRuler()
+{
+	struct IDUITimerRuler * _result;
+	raw_GetTimeRuler(&_result);
+	return _result;
+}
+
+inline void IDUITimeAxis::SetRectlange(BOOL  bRectlange  )
+{
+	VARIANT_BOOL xxx_bRectlange = bRectlange ? VARIANT_TRUE : VARIANT_FALSE;
+
+	raw_SetRectlange(xxx_bRectlange  );
+}
+
+inline struct IDUITimeChannel * IDUITimeAxis::GetTimeChannel(long  nIndex  )
+{
+	struct IDUITimeChannel * _result;
+	raw_GetTimeChannel(nIndex, &_result);
+	return _result;
+}
+
+inline long  IDUITimeAxis::GetChannelCount()
+{
+	long  _result;
+	raw_GetChannelCount(&_result);
+	return _result;
+}
+
+inline void IDUITimeAxis::SetTickPix(long  nTickPix  )
+{
+
+	raw_SetTickPix(nTickPix  );
+}
+
+inline void IDUITimeAxis::RemoveTimeChannel(long  nIndex  )
+{
+
+	raw_RemoveTimeChannel(nIndex  );
+}
+
+inline void IDUITimeAxis::SetMultiSelect(BOOL  bMultiSelect  )
+{
+	VARIANT_BOOL xxx_bMultiSelect = bMultiSelect ? VARIANT_TRUE : VARIANT_FALSE;
+
+	raw_SetMultiSelect(xxx_bMultiSelect  );
+}
+
+inline BOOL  IDUITimeAxis::IsMultiSelect()
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_IsMultiSelect(&_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline struct IDUITimeChannel * IDUITimeAxis::GetSelChannel()
+{
+	struct IDUITimeChannel * _result;
+	raw_GetSelChannel(&_result);
+	return _result;
+}
+
+inline void IDUITimeAxis::SetPointerShow(BOOL  bShow  )
+{
+	VARIANT_BOOL xxx_bShow = bShow ? VARIANT_TRUE : VARIANT_FALSE;
+
+	raw_SetPointerShow(xxx_bShow  );
+}
+
+inline void IDUITimeAxis::SetBackColor(struct IFillColor * pFillColor, BOOL  bRedraw  )
+{
+	VARIANT_BOOL xxx_bRedraw = bRedraw ? VARIANT_TRUE : VARIANT_FALSE;
+
+	raw_SetBackColor(pFillColor, xxx_bRedraw  );
+}
+
+inline void IDUITimeAxis::SetRulerHeight(long  nHeight  )
+{
+
+	raw_SetRulerHeight(nHeight  );
+}
+
+inline void IDUITimeAxis::SetRulerBackColor(struct IFillColor * pFillColor  )
+{
+
+	raw_SetRulerBackColor(pFillColor  );
+}
+
+inline void IDUITimeAxis::SetRulerBackImage(struct IDUIImageBase * pImageBase  )
+{
+
+	raw_SetRulerBackImage(pImageBase  );
+}
+
+inline void IDUITimeAxis::SetRulerOffsetX(long  nOffsetX  )
+{
+
+	raw_SetRulerOffsetX(nOffsetX  );
+}
+
+inline void IDUITimeAxis::SetChannelHeight(long  nHeight  )
+{
+
+	raw_SetChannelHeight(nHeight  );
+}
+
+inline void IDUITimeAxis::SetSelPointerCenter()
+{
+
+	raw_SetSelPointerCenter();
+}
+
+inline void IDUITimeAxis::SetChannelColor(enum ChannelState  nState, struct IFillColor * pFillColor  )
+{
+
+	raw_SetChannelColor(nState, pFillColor  );
+}
+
+inline void IDUITimeAxis::SetChannelImage(enum ChannelState  nState, struct IDUIImageBase * pImageBase  )
+{
+
+	raw_SetChannelImage(nState, pImageBase  );
+}
+
+inline void IDUITimeChannel::SetText(tstring  bStrText  )
+{
+	_bstr_t xxx_bStrText(bStrText.c_str());
+
+	raw_SetText(xxx_bStrText  );
+}
+
+inline struct IDUITimePointer * IDUITimeChannel::GetTimePointer()
+{
+	struct IDUITimePointer * _result;
+	raw_GetTimePointer(&_result);
+	return _result;
+}
+
+inline struct IDUITimeLine * IDUITimeChannel::AppendTimeLine(struct DataTime  tStart, struct DataTime  tEnd, long  nID, struct IFillColor * pFillColor, struct IDUIImageBase * pImageBase  )
+{
+	struct IDUITimeLine * _result;
+	raw_AppendTimeLine(tStart, tEnd, nID, pFillColor, pImageBase, &_result);
+	return _result;
+}
+
+inline struct IDUITimeLine * IDUITimeChannel::GetTimeLine(long  nIndex  )
+{
+	struct IDUITimeLine * _result;
+	raw_GetTimeLine(nIndex, &_result);
+	return _result;
+}
+
+inline long  IDUITimeChannel::GetTimeLineCount()
+{
+	long  _result;
+	raw_GetTimeLineCount(&_result);
+	return _result;
+}
+
+inline void IDUITimeChannel::SetPointerPos(struct DataTime  tTime  )
+{
+
+	raw_SetPointerPos(tTime  );
+}
+
+inline void IDUITimeChannel::RemoveAllTimeLine()
+{
+
+	raw_RemoveAllTimeLine();
+}
+
+inline void IDUITimeChannel::RemoveTimeLineById(long  nID  )
+{
+
+	raw_RemoveTimeLineById(nID  );
+}
+
+inline tstring  IDUITimeChannel::GetText()
+{
+	BSTR _result = NULL;
+	raw_GetText(&_result);
+	tstring _strResult;
+#ifdef UNICODE
+	_strResult = (LPWSTR)_result;
+#else
+	USES_CONVERSION;
+	_strResult = W2A(_result);
+#endif
+	return _strResult;
+}
+
+inline void IDUITimeChannel::SetState(enum ChannelState  nState  )
+{
+
+	raw_SetState(nState  );
+}
+
+inline BOOL  IDUITimeChannel::IsCheck()
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_IsCheck(&_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline void IDUITimeChannel::SetCheck(BOOL  bCheck  )
+{
+	VARIANT_BOOL xxx_bCheck = bCheck ? VARIANT_TRUE : VARIANT_FALSE;
+
+	raw_SetCheck(xxx_bCheck  );
+}
+
+inline void IDUITimeChannel::SetBtnText(tstring  strText  )
+{
+	_bstr_t xxx_strText(strText.c_str());
+
+	raw_SetBtnText(xxx_strText  );
+}
+
+inline struct IDUITimeLine * IDUITimeChannel::GetTimeLineById(long  nID  )
+{
+	struct IDUITimeLine * _result;
+	raw_GetTimeLineById(nID, &_result);
+	return _result;
+}
+
+inline void IDUITimeChannel::AppendTimeTag(OLE_HANDLE  hTagBitmap, OLE_HANDLE  hCheckBitmap, struct IDUIImageBase * pImageBase, struct DataTime  tStartTimeData, struct DataTime  tEndTimeData, long  nID  )
+{
+
+	raw_AppendTimeTag(hTagBitmap, hCheckBitmap, pImageBase, tStartTimeData, tEndTimeData, nID  );
+}
+
+inline void IDUITimeChannel::RemoveAllTagTimeTag()
+{
+
+	raw_RemoveAllTagTimeTag();
+}
+
+inline void IDUITimeChannel::RemoveTimeTagById(long  nID  )
+{
+
+	raw_RemoveTimeTagById(nID  );
+}
+
+inline struct SkinRect  IDUITimeChannel::GetTimeTagRectById(long  nID  )
+{
+	struct SkinRect  _result;
+	raw_GetTimeTagRectById(nID, &_result);
+	return _result;
+}
+
+inline struct DataTime  IDUITimeChannel::GetTimeTagStartTimeById(long  nIndex  )
+{
+	struct DataTime  _result;
+	raw_GetTimeTagStartTimeById(nIndex, &_result);
+	return _result;
+}
+
+inline struct DataTime  IDUITimeChannel::GetTimeTagEndTimeById(long  nIndex  )
+{
+	struct DataTime  _result;
+	raw_GetTimeTagEndTimeById(nIndex, &_result);
+	return _result;
+}
+
+inline BOOL  IDUITimeChannel::IsTagCheck(long  nID  )
+{
+	VARIANT_BOOL _result = VARIANT_FALSE;
+	raw_IsTagCheck(nID, &_result);
+	return _result ? TRUE : FALSE;
+}
+
+inline void IDUITimeChannel::SetColor(enum ChannelState  nState, struct IFillColor * pFillColor  )
+{
+
+	raw_SetColor(nState, pFillColor  );
+}
+
+inline void IDUITimeChannel::SetImageBase(enum ChannelState  nState, struct IDUIImageBase * pImageBase  )
+{
+
+	raw_SetImageBase(nState, pImageBase  );
+}
+
+inline void IDUITimePointer::SetStartTime(struct DataTime  tmData  )
+{
+
+	raw_SetStartTime(tmData  );
+}
+
+inline struct DataTime  IDUITimeLine::GetSelectionStartTime(long  nIndex  )
+{
+	struct DataTime  _result;
+	raw_GetSelectionStartTime(nIndex, &_result);
+	return _result;
+}
+
+inline void IDUITimeLine::Deselect()
+{
+
+	raw_Deselect();
+}
+
+inline struct DataTime  IDUITimeLine::GetStartTime()
+{
+	struct DataTime  _result;
+	raw_GetStartTime(&_result);
+	return _result;
+}
+
+inline struct DataTime  IDUITimeLine::GetEndTime()
+{
+	struct DataTime  _result;
+	raw_GetEndTime(&_result);
+	return _result;
+}
+
+inline struct DataTime  IDUITimeLine::GetSelectionEndTime(long  nIndex  )
+{
+	struct DataTime  _result;
+	raw_GetSelectionEndTime(nIndex, &_result);
+	return _result;
+}
+
+inline long  IDUITimeLine::GetSelectionCount()
+{
+	long  _result;
+	raw_GetSelectionCount(&_result);
+	return _result;
+}
+
+inline void IDUITimeLine::SetSelectionTime(struct DataTime  tmStartData, struct DataTime  tmEndData  )
+{
+
+	raw_SetSelectionTime(tmStartData, tmEndData  );
+}
+
+inline struct IDUITimePointer * IDUITimerRuler::GetTimePointer()
+{
+	struct IDUITimePointer * _result;
+	raw_GetTimePointer(&_result);
+	return _result;
+}
+
+inline struct DataTime  IDUITimerRuler::GetStartTime()
+{
+	struct DataTime  _result;
+	raw_GetStartTime(&_result);
+	return _result;
+}
+
